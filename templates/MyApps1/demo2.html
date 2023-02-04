@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom filters</title>
+</head>
+<body>
+    <h1>Custom filters</h1>
+<hr/>
+{% load cust_filters %}
+{% load cust2_filters %}
+{% load cust3_filters %}
+{% load cust4_filters %}
+<ul>
+    <li>{{ name|fupper }}</li>
+    <li>{{ subject|c_and_c:'good morning'}}</li>
+    <li>{{ dept|truncate }}</li>
+    <li>{{ date1|timesince }}</li>
+    <li>{{ date1|date:"d-m-y" }}</li>
+</ul>
+</body>
+</html>

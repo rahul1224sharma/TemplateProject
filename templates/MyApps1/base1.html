@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>base 1</title>
+    <link rel="stylesheet" href="{% static 'css/base1.css' %}">
+    {% block child_css %}
+    {% endblock %}
+</head>
+<body>
+    <h1>Common code for all child templates</h1>
+    <hr />
+    {% block child_block %}
+{% endblock %}
+<h3>End of common code from base.html</h3>
+<hr/>
+</body>
+</html>
